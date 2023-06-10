@@ -1,0 +1,10 @@
+# Libraries needed
+using CalculusWithJulia, Plots
+
+## add the range
+
+x = range(-1, stop = 1, steps = 0.01)
+f(x) = (x^2 - x)^2
+plot(x, f.(x), legend=false)
+hline!([0], linestyle=:dash)
+vline!([0], linestyle=:dash, color="red")
